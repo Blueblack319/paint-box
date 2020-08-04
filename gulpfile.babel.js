@@ -15,7 +15,7 @@ const routes = {
 const clean = () => del(["dist"]);
 
 const watch = () => {
-  gulp.watch(routes.style.watch);
+  gulp.watch(routes.style.watch, scss);
 };
 
 const scss = () =>
