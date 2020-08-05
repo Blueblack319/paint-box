@@ -169,6 +169,86 @@ main {
         }
       }
       &:nth-child(3) {
+        margin-top: 80px;
+        h4 {
+          font-size: 11px;
+          font-weight: 600;
+          letter-spacing: 2px;
+          padding-bottom: 35px;
+        }
+        .header {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          h1 {
+            font-size: 30px;
+            font-weight: 200;
+            font-family: "Playfair Display", serif;
+            letter-spacing: -2px;
+            margin-bottom: 60px;
+            color: rgba(0, 0, 0, 0.7);
+          }
+        }
+        .container {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          .item {
+            color: rgba(0, 0, 0, 0.7);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .item__picture {
+              width: 100%;
+              img {
+                width: 100%;
+                height: auto;
+              }
+            }
+            .item__info {
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+              h4 {
+                padding-bottom: 20px;
+                font-size: 13px;
+              }
+              h1 {
+                font-size: 30px;
+                font-weight: 200;
+                font-family: "Playfair Display", serif;
+                font-style: italic;
+                letter-spacing: -4px;
+                color: rgba(0, 0, 0, 0.6);
+              }
+              h5 {
+                padding-top: 20px;
+                padding-bottom: 40px;
+                font-size: 10px;
+                font-weight: 700;
+                letter-spacing: 2px;
+                color: rgba(0, 0, 0, 0.5);
+              }
+            }
+            .item__button {
+              background-color: rgba(255, 255, 255, 0);
+              border: 1px solid rgba(0, 0, 0, 0.7);
+              width: 240px;
+              height: 55px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              span {
+                font-size: 11px;
+                font-weight: 600;
+                letter-spacing: 2px;
+                color: rgba(0, 0, 0, 0.7);
+              }
+            }
+          }
+        }
       }
     }
   }
